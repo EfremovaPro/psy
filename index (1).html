@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Психолог Яна Ефремова. Когнитивно-поведенческий подход и помощь в кризисных ситуациях: тревога, усталость, утрата, развод, перемены. Онлайн, встреча 50 минут.">
+<meta property="og:title" content="Яна Ефремова — психолог">
+<meta property="og:description" content="Психолог Яна Ефремова. Когнитивно-поведенческий подход и помощь в кризисных ситуациях: тревога, усталость, утрата, развод, перемены. Онлайн, встреча 50 минут.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="photo.webp">
+<style>body{margin:0}img{max-width:100%;height:auto}[hidden]{display:none!important}</style>
+<title>Яна Ефремова — психолог онлайн: КПТ и помощь в кризисе</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600&family=Golos+Text:wght@400;500;600&family=Spectral:ital,wght@1,400;1,500&display=swap">
+<style>
+/* Раскладка: колонка 1080px, выравнивание по левому краю; ритм из чередования открытых секций и цветных полос во всю ширину; громкое место — крупная сменяющаяся мысль в первом экране */
+:root {
+  --bg: #EFF3F1;
+  --paper: #F9FBFA;
+  --tint: #DCE8E3;
+  --ink: #17272A;
+  --muted: #55676A;
+  --line: #CCD8D4;
+  --accent: #1D5F5A;
+  --accent-ink: #FFFFFF;
+  --deep: #163F3D;
+  --deep-ink: #EAF3F0;
+  --deep-muted: #A9C7C0;
+  --f-display: "Geologica", "Segoe UI", Arial, sans-serif;
+  --f-body: "Golos Text", "Segoe UI", Arial, sans-serif;
+  --f-voice: "Spectral", Georgia, "Times New Roman", serif;
+  --gutter: clamp(16px, 4vw, 40px);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #101A1C; --paper: #172427; --tint: #1A2B2D; --ink: #E6EEEC; --muted: #9DB0AE; --line: #2B3D40;
+    --accent: #7FD1C4; --accent-ink: #0E1A1B; --deep: #0B2A29; --deep-ink: #E6EEEC; --deep-muted: #9DB0AE;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #101A1C; --paper: #172427; --tint: #1A2B2D; --ink: #E6EEEC; --muted: #9DB0AE; --line: #2B3D40;
+  --accent: #7FD1C4; --accent-ink: #0E1A1B; --deep: #0B2A29; --deep-ink: #E6EEEC; --deep-muted: #9DB0AE;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--f-body);
+  font-size: 17px;
+  line-height: 1.6;
+  padding-inline: var(--gutter);
+  padding-block: 0;
+  overflow-x: clip;
+}
+.wrap { max-width: 1080px; margin-inline: auto; display: flex; flex-direction: column; }
+a { color: var(--accent); text-underline-offset: 3px; }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+h1, h2, h3 { font-family: var(--f-display); font-weight: 600; line-height: 1.15; margin: 0; text-wrap: balance; }
+p { margin: 0; }
+ul, ol { margin: 0; padding: 0; list-style: none; }
+.tag { font-size: 12.5px; letter-spacing: 0.07em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+
+/* шапка */
+.top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 28px; padding-block: 20px; }
+.brand { font-family: var(--f-display); font-weight: 600; font-size: 20px; color: var(--ink); text-decoration: none; letter-spacing: -0.01em; }
+.brand span { color: var(--muted); font-weight: 400; }
+.nav { display: flex; flex-wrap: wrap; gap: 6px 22px; font-size: 15px; }
+.nav a { color: var(--ink); text-decoration: none; }
+.nav a:hover { color: var(--accent); text-decoration: underline; }
+.btn {
+  display: inline-block; background: var(--accent); color: var(--accent-ink);
+  font-family: var(--f-display); font-weight: 500; font-size: 16px;
+  padding: 13px 24px; border-radius: 999px; text-decoration: none; border: 0; cursor: pointer;
+}
+.btn:hover { filter: brightness(1.08); }
+.btn.small { font-size: 15px; padding: 9px 18px; }
+
+/* полоса во всю ширину экрана */
+.band { background: var(--band, var(--tint)); box-shadow: 0 0 0 100vmax var(--band, var(--tint)); clip-path: inset(0 -100vmax); }
+
+/* первый экран */
+.hero { --band: var(--tint); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 420px); gap: 32px 56px; align-items: center; padding-block: 48px 56px; }
+.hero h1 { font-size: clamp(38px, 6.4vw, 66px); letter-spacing: -0.03em; }
+.lede { font-size: 20px; color: var(--muted); margin-top: 16px; max-width: 40ch; }
+.thoughts { margin-top: 40px; padding-left: 22px; border-left: 3px solid var(--accent); }
+.thought-stack { display: grid; }
+.thought-stack blockquote {
+  grid-area: 1 / 1; margin: 0;
+  font-family: var(--f-voice); font-style: italic; font-weight: 400;
+  font-size: clamp(24px, 3.2vw, 33px); line-height: 1.3; max-width: 25ch;
+  visibility: hidden; opacity: 0; transition: opacity .5s ease;
+}
+.thought-stack blockquote.on { visibility: visible; opacity: 1; }
+.thought-ctl { display: flex; align-items: center; gap: 12px; margin-top: 18px; color: var(--muted); font-size: 14px; font-variant-numeric: tabular-nums; }
+.thought-ctl button {
+  width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--line);
+  background: var(--paper); color: var(--ink); font-size: 16px; cursor: pointer; line-height: 1;
+}
+.thought-ctl button:hover { border-color: var(--accent); color: var(--accent); }
+.side { min-width: 0; }
+.portrait { aspect-ratio: 4 / 5; max-width: 100%; width: 100%; height: auto; display: block; }
+.hero-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; margin-top: 36px; }
+.facts { display: flex; flex-wrap: wrap; gap: 8px; font-size: 14.5px; }
+.facts li { background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: 5px 13px; }
+
+/* секции */
+.sec { padding-block: 64px; display: flex; flex-direction: column; gap: 32px; }
+.sec-head { display: flex; flex-direction: column; gap: 10px; max-width: 60ch; }
+.sec-head h2 { font-size: clamp(28px, 3.8vw, 40px); letter-spacing: -0.025em; }
+.sec-head p { color: var(--muted); }
+
+/* с чем можно прийти */
+.cases { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.case { background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: 24px; display: flex; flex-direction: column; gap: 12px; }
+.case q { font-family: var(--f-voice); font-style: italic; font-size: 23px; line-height: 1.3; quotes: "«" "»"; }
+.case p { color: var(--muted); font-size: 15.5px; margin-top: auto; }
+.notmine { border-left: 3px solid var(--line); padding: 4px 0 4px 20px; max-width: 70ch; font-size: 15.5px; color: var(--muted); }
+.notmine strong { color: var(--ink); font-family: var(--f-display); font-weight: 600; }
+
+/* как я работаю */
+.how { --band: var(--deep); color: var(--deep-ink); }
+.how .sec-head p { color: var(--deep-muted); }
+.how .tag { color: var(--deep-muted); }
+.methods { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 56px; }
+.method { display: flex; flex-direction: column; gap: 16px; }
+.method h3 { font-size: 24px; }
+.method li { padding: 14px 0 14px 34px; border-top: 1px solid color-mix(in srgb, var(--deep-ink) 22%, transparent); position: relative; }
+.method li::before { content: counter(m); counter-increment: m; position: absolute; left: 0; top: 14px; font-family: var(--f-display); font-weight: 600; color: var(--deep-muted); }
+.method ol { counter-reset: m; }
+
+/* встреча */
+.steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; counter-reset: step; }
+.steps li { counter-increment: step; display: flex; flex-direction: column; gap: 8px; border-top: 2px solid var(--accent); padding-top: 14px; }
+.steps li::before { content: counter(step); font-family: var(--f-display); font-weight: 600; font-size: 15px; color: var(--accent); }
+.steps h3 { font-size: 19px; }
+.steps p { color: var(--muted); font-size: 15.5px; }
+
+/* стоимость */
+.pricing { --band: var(--tint); }
+.price-card { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 28px 56px; align-items: center; }
+.price { font-family: var(--f-display); font-size: clamp(44px, 7vw, 72px); font-weight: 600; letter-spacing: -0.03em; line-height: 1; }
+.price-sub { color: var(--muted); margin-top: 10px; }
+.incl li { padding: 11px 0 11px 28px; border-top: 1px solid var(--line); position: relative; }
+.incl li:last-child { border-bottom: 1px solid var(--line); }
+.incl li::before { content: ""; position: absolute; left: 4px; top: 1.05em; width: 9px; height: 5px; border-left: 2px solid var(--accent); border-bottom: 2px solid var(--accent); transform: rotate(-45deg); }
+
+/* вопросы */
+.faq { max-width: 760px; border-top: 1px solid var(--line); }
+.faq details { border-bottom: 1px solid var(--line); }
+.faq summary { cursor: pointer; list-style: none; padding: 18px 40px 18px 0; position: relative; font-family: var(--f-display); font-weight: 500; font-size: 18px; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; position: absolute; right: 6px; top: 12px; font-size: 26px; font-weight: 400; color: var(--accent); }
+.faq details[open] summary::after { content: "−"; }
+.faq details p { color: var(--muted); padding: 0 40px 20px 0; }
+
+/* обо мне */
+.about { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 28px 56px; align-items: start; }
+.about-text { display: flex; flex-direction: column; gap: 14px; }
+.about-text .big { font-family: var(--f-voice); font-style: italic; font-size: clamp(22px, 2.6vw, 27px); line-height: 1.35; }
+.edu { display: flex; flex-direction: column; gap: 12px; }
+.edu li { background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; display: flex; flex-direction: column; gap: 4px; }
+.edu strong { font-family: var(--f-display); font-weight: 600; font-size: 18px; }
+.edu span { color: var(--muted); font-size: 15px; }
+
+/* запись */
+.book { background: var(--accent); color: var(--accent-ink); border-radius: 20px; padding: clamp(28px, 5vw, 56px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px 40px; margin-block: 8px 56px; }
+.book h2 { font-size: clamp(26px, 3.6vw, 38px); letter-spacing: -0.02em; }
+.book p { opacity: 0.9; margin-top: 10px; max-width: 44ch; }
+.book .btn { background: var(--accent-ink); color: var(--accent); font-size: 17px; padding: 15px 28px; }
+.contact { display: flex; flex-direction: column; align-items: center; gap: 10px; font-size: 15px; }
+
+.foot { border-top: 1px solid var(--line); padding-block: 24px 40px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; color: var(--muted); font-size: 14.5px; }
+
+@media (max-width: 860px) {
+  .hero { grid-template-columns: minmax(0, 1fr); padding-block: 28px 40px; }
+  .side { order: -1; max-width: 240px; }
+  .cases, .methods, .steps, .price-card, .about { grid-template-columns: minmax(0, 1fr); }
+  .sec { padding-block: 44px; }
+  .nav { display: none; }
+}
+@media (min-width: 861px) and (max-width: 1000px) {
+  .cases, .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (prefers-reduced-motion: reduce) { .thought-stack blockquote { transition: none; } html { scroll-behavior: auto; } }
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="#top">Ефремова <span>· психолог</span></a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#asks">С чем прийти</a>
+      <a href="#how">Как я работаю</a>
+      <a href="#meeting">Встреча</a>
+      <a href="#price">Стоимость</a>
+      <a href="#faq">Вопросы</a>
+      <a href="#about">Обо мне</a>
+    </nav>
+    <a class="btn small" href="#book">Записаться</a>
+  </header>
+
+  <main id="top">
+    <section class="hero band">
+      <div>
+        <h1>Яна Ефремова</h1>
+        <p class="lede">Психолог. Работаю в когнитивно-поведенческом подходе и с кризисными ситуациями: когда тревожно, тяжело или жизнь резко изменилась.</p>
+
+        <div class="thoughts" aria-live="polite">
+          <div class="thought-stack" id="thoughtStack">
+            <blockquote class="on">Устать справляться в одиночку можно и при полном порядке в жизни.</blockquote>
+            <blockquote>На встрече не нужно говорить красиво. Достаточно начать с того, что беспокоит сегодня.</blockquote>
+            <blockquote>Подруга отвечает на вопрос «что делать». Со мной можно сначала понять, чего вы сами хотите.</blockquote>
+            <blockquote>Одна встреча редко меняет жизнь. Зато после неё обычно понятно, с чего начать.</blockquote>
+            <blockquote>В кризисе не нужно сразу решать всю жизнь. Сначала хватит плана на ближайшие дни.</blockquote>
+          </div>
+          <div class="thought-ctl">
+            <button type="button" id="thoughtPrev" aria-label="Предыдущая мысль">←</button>
+            <button type="button" id="thoughtNext" aria-label="Следующая мысль">→</button>
+            <span id="thoughtCount">1 из 5</span>
+          </div>
+        </div>
+
+        <div class="hero-cta">
+          <a class="btn" href="#book">Записаться на встречу</a>
+          <ul class="facts">
+            <li>Онлайн</li>
+            <li>50 минут</li>
+            <li>1 500 ₽</li>
+            <li>Отвечаю в течение дня</li>
+          </ul>
+        </div>
+      </div>
+      <div class="side">
+        <img class="portrait" src="photo.webp" alt="Яна Ефремова, психолог" width="800" height="1000">
+      </div>
+    </section>
+
+    <section class="sec" id="asks">
+      <div class="sec-head">
+        <span class="tag">С чем можно прийти</span>
+        <h2>С таких слов часто начинается первая встреча</h2>
+      </div>
+      <div class="cases">
+        <article class="case">
+          <span class="tag">Тревога</span>
+          <q>Всё вроде в порядке, а внутри постоянно тревожно</q>
+          <p>Разберём, из каких мыслей складывается тревога и что с ними делать.</p>
+        </article>
+        <article class="case">
+          <span class="tag">Усталость</span>
+          <q>Отдыхаю, а сил всё равно нет</q>
+          <p>Посмотрим, куда уходят силы и что можно поменять уже сейчас.</p>
+        </article>
+        <article class="case">
+          <span class="tag">Трудный разговор</span>
+          <q>Давно нужно поговорить, а я всё откладываю</q>
+          <p>Подготовим разговор: что сказать, как и чего от него ждать.</p>
+        </article>
+        <article class="case">
+          <span class="tag">Отношения</span>
+          <q>С близкими то ссора, то молчание</q>
+          <p>С партнёром, родителями, взрослыми детьми. Найдём, что повторяется и где вы можете повлиять.</p>
+        </article>
+        <article class="case">
+          <span class="tag">Резкие перемены</span>
+          <q>Жизнь разделилась на до и после</q>
+          <p>Утрата, развод, потеря работы, переезд. Сначала ищем опору на ближайшие дни.</p>
+        </article>
+        <article class="case">
+          <span class="tag">Вопросы о ребёнке</span>
+          <q>Не понимаю, как с ним разговаривать</q>
+          <p>Учёба, экран, упрямство. Обсуждаем с вами, что происходит и как на это отвечать.</p>
+        </article>
+      </div>
+      <p class="notmine"><strong>С чем я не работаю.</strong> Психиатрические диагнозы, подбор лекарств и зависимости: здесь нужен врач, психиатр или нарколог. Если напишете с таким вопросом, скажу об этом сразу. При угрозе жизни звоните 112.</p>
+    </section>
+
+    <section class="sec how band" id="how">
+      <div class="sec-head">
+        <span class="tag">Как я работаю</span>
+        <h2>Два подхода, в зависимости от того, что происходит</h2>
+        <p>Если трудность тянется давно, работаем с мыслями и привычками. Если всё случилось недавно и резко, сначала возвращаем опору.</p>
+      </div>
+      <div class="methods">
+        <div class="method">
+          <h3>Когнитивно-поведенческий подход</h3>
+          <ol>
+            <li>Находим мысли, которые запускают тревогу или опускают руки.</li>
+            <li>Проверяем их: что здесь факт, а что привычка так думать.</li>
+            <li>Между встречами вы пробуете небольшие упражнения в обычной жизни.</li>
+          </ol>
+        </div>
+        <div class="method">
+          <h3>Помощь в кризисе</h3>
+          <ol>
+            <li>Снижаем остроту: сон, еда, самые близкие дела.</li>
+            <li>Отделяем то, что нужно решить сейчас, от того, что подождёт.</li>
+            <li>Составляем план на ближайшие дни и ищем, на кого можно опереться.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" id="meeting">
+      <div class="sec-head">
+        <span class="tag">Как проходит встреча</span>
+        <h2>От первого сообщения до решения, идти ли дальше</h2>
+      </div>
+      <ol class="steps">
+        <li><h3>Вы пишете мне</h3><p>В Telegram, в двух словах: что беспокоит. Отвечаю в течение дня.</p></li>
+        <li><h3>Сверяемся</h3><p>Я честно говорю, моя ли это тема. Если нет, скажу сразу, до встречи и оплаты.</p></li>
+        <li><h3>Встречаемся</h3><p>Онлайн по видеосвязи, 50 минут. Время подбираем под ваш город.</p></li>
+        <li><h3>Вы решаете</h3><p>Продолжать или нет. Пакетов и предоплаты за несколько встреч нет.</p></li>
+      </ol>
+    </section>
+
+    <section class="sec pricing band" id="price">
+      <div class="price-card">
+        <div>
+          <span class="tag">Стоимость</span>
+          <p class="price">1 500 ₽</p>
+          <p class="price-sub">За встречу, до конца 2026 года. С января 2027 года — 2 000 ₽.</p>
+        </div>
+        <ul class="incl">
+          <li>Встреча длится 50 минут</li>
+          <li>Онлайн, из любого города</li>
+          <li>Оплата после встречи, переводом</li>
+          <li>Без пакетов и предоплаты</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="sec" id="faq">
+      <div class="sec-head">
+        <span class="tag">Частые вопросы</span>
+        <h2>О чём спрашивают до первой встречи</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Я не знаю, с чего начать. Это нормально?</summary>
+          <p>Да. Рассказ готовить не нужно. Начнём с того, что беспокоит сегодня, остальное я спрошу сама.</p>
+        </details>
+        <details>
+          <summary>Сколько встреч понадобится?</summary>
+          <p>Зависит от того, с чем вы пришли. С одной конкретной ситуацией иногда хватает нескольких встреч, с давней тревогой нужно больше. После первой встречи я скажу, как это вижу, а решаете вы.</p>
+        </details>
+        <details>
+          <summary>Можно прийти один раз?</summary>
+          <p>Да. Обязательств нет: после каждой встречи вы сами решаете, нужна ли следующая.</p>
+        </details>
+        <details>
+          <summary>Это конфиденциально?</summary>
+          <p>Да. Всё, что вы расскажете, остаётся между нами.</p>
+        </details>
+        <details>
+          <summary>Чем психолог отличается от психиатра?</summary>
+          <p>Психиатр — врач: он ставит диагнозы и назначает лекарства. Я не врач и лекарства не назначаю. Моя работа — разговор и упражнения, которые помогают справляться с мыслями, чувствами и трудными ситуациями.</p>
+        </details>
+        <details>
+          <summary>Вы работаете с детьми?</summary>
+          <p>Я работаю со взрослыми. С вопросами о ребёнке приходит родитель, и мы разбираем, что может сделать он сам.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="sec" id="about">
+      <div class="sec-head">
+        <span class="tag">Обо мне</span>
+        <h2>Яна Ефремова, психолог</h2>
+      </div>
+      <div class="about">
+        <div class="about-text">
+          <p class="big">В профессию пришла взрослым человеком, после многих лет другой работы и своей семейной жизни.</p>
+          <p>Постоянно развиваюсь и применяю новые знания в работе.</p>
+        </div>
+        <ul class="edu">
+          <li><strong>Кризисная психология</strong><span>Профессиональная переподготовка, 850 часов. Институт прикладной психологии и психоанализа, Москва, 2026</span></li>
+          <li><strong>Когнитивно-поведенческая терапия</strong><span>Профессиональная переподготовка, 256 часов. Владивосток, 2025</span></li>
+          <li><strong>Педагог-психолог</strong><span>Второе высшее образование, бакалавриат. Казанский инновационный университет, окончание в 2027 году</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="book" id="book">
+      <div>
+        <h2>Напишите, с чем хотите прийти</h2>
+        <p>Достаточно пары предложений. Отвечу в течение дня и предложу время.</p>
+      </div>
+      <div class="contact"><a class="btn" href="https://t.me/+79147561263">Написать в Telegram</a><span>или по номеру +7 914 756-12-63</span></div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span>© 2026 Яна Ефремова, психолог</span>
+    <span>Telegram: +7 914 756-12-63</span>
+  </footer>
+</div>
+
+<script>
+(function () {
+  var items = Array.prototype.slice.call(document.querySelectorAll('#thoughtStack blockquote'));
+  var count = document.getElementById('thoughtCount');
+  var i = 0, timer = null;
+  function show(n) {
+    items[i].classList.remove('on');
+    i = (n + items.length) % items.length;
+    items[i].classList.add('on');
+    count.textContent = (i + 1) + ' из ' + items.length;
+  }
+  function stop() { if (timer) { clearInterval(timer); timer = null; } }
+  document.getElementById('thoughtPrev').addEventListener('click', function () { stop(); show(i - 1); });
+  document.getElementById('thoughtNext').addEventListener('click', function () { stop(); show(i + 1); });
+  var calm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!calm) { timer = setInterval(function () { show(i + 1); }, 8000); }
+})();
+</script>
+</body>
+</html>
